@@ -1,0 +1,25 @@
+{
+  "name": "within-my-macros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "passport": "^0.4.0",
+    "passport-http-bearer": "^1.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
